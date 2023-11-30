@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bg-body);
+}
+
+:root{
+--size-form: 18px;
+--size-mainUsers: 16px;
+--bg-user: rgb(96, 87, 87);
+--color-user: white;
+--bg-body:aqua;
+--bg-add: rgb(4, 203, 47);
+--bg-clear: red
+}
+
+.container {
+    margin: 0 20px;
+}
+
+.mainHeading{
+background-color: blueviolet;
+border-radius: 50px;}
+
+h1 {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 40px;
+}
+h3{
+    font-size: 25px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: var(--size-form)
+}
+
+input {
+    display: block;
+    height: 30px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+input:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.btn:active {
+    transform: scale(0.99);
+}
+
+.btn {
+    background: none;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.add {
+    outline: 2px solid rgb(4, 203, 47);
+    margin-bottom: 10px;
+    background-color: var(--bg-add);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.clear {
+    outline: 2px solid red;
+    width: 50vw;
+    background-color: var(--bg-clear);
+    font-weight: 700;
+}
+
+.mainUsers,
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--size-mainUsers);
+}
+
+.users,
+.user {
+    width: 40vw;
+}
+
+.user {
+    background-color: var(--bg-user);
+    margin-bottom: 10px;
+    color:  var(--color-user);
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.user-outer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 4px;
+
+}
+
+.delete,
+.change {
+    border: none;
+    height: 40%;
+    color: rgb(0, 0, 0);
+    padding: 0 10px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.delete {
+    background: var(--bg-clear);
+}
+
+.change {
+    background: var(--bg-add);
+}
+
+.delete:active,
+.change:active {
+    transform: scale(0.95);
+}
